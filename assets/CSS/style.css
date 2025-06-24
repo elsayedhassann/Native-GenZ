@@ -1,0 +1,282 @@
+
+.text1{
+  color: var(--basic-text-color);
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  gap: 10px;
+}
+.text_main{
+  color: var(--basic-text-color);
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-color);
+
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to next line if needed  */
+  justify-content: space-between; /* Distribute cards evenly */
+  margin: 0 auto ; /* Center the container horizontally */
+  width: 95%; /* Set a maximum width for responsiveness */
+}
+
+.card {
+  background-color: var(--sub-color);
+  box-shadow: 4px 4px 10px #0000001a;
+  border-radius: 0 20px 0 20px;
+  margin: 10px;
+  width: 300px; 
+  height: 400px; /* Adjust height as needed */
+  text-align: center;
+  padding: 20px;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  margin-top:100px ;
+}
+.card img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.card img:hover{
+  transform: scale(1.1);
+}
+.card a{
+  text-decoration: none;
+  color: black;
+}
+
+.card a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.card:hover {
+  transform: scale(1.10); /* Slight hover zoom effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+}
+.secound{
+  margin:100px  0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  gap: 30px;
+}
+
+.secound_part1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sub-color);
+  box-shadow: 4px 4px 10px #0000001a;
+  border-radius: 0 20px  20px 0 ;
+  width:  50%; 
+  height: 600px;
+  text-align: center;
+  gap: 30px;
+  padding: 50px;
+  word-spacing: 5px;
+  margin-top:100px ;
+}
+.secound_part1 .logo-pic{
+  width: 90px;
+  height: 90px;
+}
+.secound_part1 h2{
+  color:var(--basic-text-color);
+  font-size: 40px;
+}
+.secound_part2 table{
+  display: flex;
+  align-items: center;
+  box-shadow: 4px 4px 10px #0000001a;
+  border-radius:20px 0 0  20px  ;
+  width:  100%; 
+  height: 600px;
+  text-align: center;
+  margin-top:100px ;
+}
+
+.secound_part2 td{
+  font-size: 22px;
+  padding: 40px; 
+  text-shadow: 1px 1px 1px;
+}
+body.dark .secound_part2 tr{
+  color: #e9802a;
+}
+footer{
+  text-align: center;
+  background-color: var(--sub-color);
+  border-radius: 15px 15px 0 0;
+  margin: 70px 0 5px 0;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  color: var(--text-color);
+}
+.table{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+
+
+}
+.members{
+  width: 600px;
+  margin-top: 20px;
+  background-color:var(--sub-color);
+}
+footer td{
+  padding: 5px;
+}
+.batu{
+  font-size: 150px;
+  background-image: url("batu.jpg");
+  background-size: contain;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#ded{
+  width: fit-content ;
+  position: fixed;
+  bottom: 0;
+  left: 40%;
+  font-size: 10px;
+  border: #f5670e7e solid 1px;
+  border-radius:10px;
+  padding: 5px;
+  margin-bottom:2px ;
+}
+@media (max-width: 768px) {
+  .text1 {
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text_main {
+    font-size: 28px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .secound {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .secound_part1 h2 {
+    font-size: 24px;
+  }
+
+  .secound_part2 td {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .batu {
+    font-size: 60px;
+  }
+
+  #ded {
+    left: 10%;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text_main {
+    font-size: 24px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .card img {
+    height: 150px;
+  }
+
+  footer td, .secound_part2 td {
+    font-size: 16px;
+  }
+
+  .batu {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .secound_part1, .secound_part2 table {
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .secound {
+    height: auto;
+  }
+
+  .secound_part2 table {
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .members {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .card img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

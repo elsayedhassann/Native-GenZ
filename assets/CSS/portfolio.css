@@ -1,0 +1,289 @@
+.contianer{
+    margin: 100px;
+    display: flex;
+}
+span{
+  display: block;
+    font-weight: 700;
+}
+h2{
+  display: inline;
+    font-size: 32px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;  
+}
+.fristname{
+  color: var(--basic-text-color);
+}
+p{
+    white-space: pre-line;
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.photo{
+    transition: 1s;
+    box-shadow:0 10px 7px 0px #0b0b0b62;
+    margin: 90px 0 0 100px;
+    width: 400px;
+    border: var(--basic-text-color) solid;
+    border-radius: 20px;    
+  }
+  .photo:hover{
+      translate:0 -40px ;
+  }
+  .word{
+    width: 700px;
+    margin-top: 0px;
+    margin-left: 150px;
+}
+.icons{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+}
+a{
+  text-decoration: none;
+  margin: 10px 0;
+  color: red;
+  transition: 1;
+}
+h2:hover ,a:hover{
+    text-decoration: underline;
+    text-shadow: #001 2px 2px 2px;
+}
+hr{
+    width: auto;
+    color: var(--text-color);
+}
+.scard{
+ margin: 100px;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    background-color: var(--basic-text-color);
+    padding: 20px;
+    color: var(--text-color);
+    border-bottom: #222 solid 2px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+  .container{
+    margin: 100px;
+  }
+  h1{
+    color: var(--basic-text-color);
+  }
+  hr{
+    color: var(--basic-text-color);
+    margin-bottom: 20px;
+  }
+.image-name{
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+}
+.label{
+    display: flex;
+    flex-direction: column;
+  width: 100%;
+    gap: 10px;
+}
+#comcard{
+  padding: 10px;
+  border-radius:15px ;
+  background-color: var(--sub-color);
+}
+.usercom{
+  display: flex;
+  justify-content: space-between;
+}
+.subusercom{
+  display: flex;
+  gap: 10px;
+}
+.doublesub{
+    display: flex;
+    justify-content: space-between;
+}
+  p i{
+    width: 30px;
+    height: 30px;
+  }
+  .Tcomment{
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    padding: 7px;
+  }
+  .bcomment{
+     margin-top: 20px;
+  width: 100px;
+  height: auto;
+  border: #f5650e;
+  color: var(--text-color);
+  border-radius: 10px;
+  letter-spacing:1px ;
+  font-style: bold;
+  padding: 10px;
+  background-color:var(--sub-color);
+  }
+  .bcomment:hover {
+  cursor: pointer;
+}
+.bcomment:active {
+  transform: scale(.60);
+}
+.PicUser2{
+  width: 40px;
+  padding:5px;
+}
+.image-name{
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+}
+.doublesub{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:600px) {
+    nav{
+        flex-wrap: wrap;
+        margin: 0;
+        justify-content: center;
+    }
+    
+    .contianer{
+        flex-wrap: wrap;
+        margin: 0;
+        justify-content: center;
+    }
+    .photo{
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    .word{
+        margin-left: 0;
+        text-align: center ;
+    }
+    .ded{
+        display: none;
+    }
+    .zz{
+        margin-bottom: 20px;
+    }
+}
+#ded{
+  width: fit-content ;
+  position: fixed;
+  bottom: 0;
+  left: 40%;
+  font-size: 10px;
+  border: #f5670e7e solid 1px;
+  border-radius:10px;
+  padding: 5px;
+  margin-bottom:2px ;
+}
+body.dark .txt{
+    color: var(--text-color);
+  
+  }
+@media screen and (max-width: 768px) {
+  .contianer {
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 20px;
+    gap: 30px;
+  }
+
+  .photo {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .word {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .icons {
+    width: 100%;
+    align-items: center;
+  }
+
+  .scard {
+    margin: 50px 20px;
+    padding: 15px;
+  }
+
+  .image-name {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .subusercom, .doublesub {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .bcomment {
+    width: 100%;
+    text-align: center;
+  }
+
+  #ded {
+    left: 10%;
+    font-size: 8px;
+  }
+
+  .PicUser2 {
+    width: 30px;
+  }
+
+  .Tcomment {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  .photo {
+    width: 100%;
+  }
+
+  .batu {
+    font-size: 50px;
+  }
+
+  .word {
+    padding: 0 10px;
+  }
+}
