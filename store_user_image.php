@@ -13,4 +13,3 @@ if (empty($user = unserialize($_SESSION["user"]))) {
 }else {
     header("location:profile.php?msg=empty");
 }
-?>

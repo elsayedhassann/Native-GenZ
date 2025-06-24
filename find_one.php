@@ -121,4 +121,3 @@ $projects = $user->home_projects();
 
 </body>
 
-</html>

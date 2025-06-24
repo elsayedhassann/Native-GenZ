@@ -68,4 +68,3 @@ require_once('header.php');
 </script>
 </body>
 
-</html>

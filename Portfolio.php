@@ -133,4 +133,3 @@ $myproject = $user->my_projects($target_user_id);
 <p id="ded" class="txt">@Developed by GenZ Team ^_^</p>
 </body>
 
-</html>

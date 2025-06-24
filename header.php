@@ -12,7 +12,7 @@ if (empty($user = unserialize($_SESSION["user"]))) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon shortcut" href="imgs/Genz_logo.ico" />
-        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="assets/CSS/header.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>GenZ</title>
 </head>
@@ -62,4 +62,3 @@ if (empty($user = unserialize($_SESSION["user"]))) {
                 </div>
             </div>
         </div>
-    </nav>

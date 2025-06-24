@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 ?>
@@ -123,5 +124,4 @@ session_start();
 </html>
 <?php
 $_SESSION["errors"] = null;
-$_GET["msg2"] = null;
-?>
+$_GET["msg2"] = null;?>

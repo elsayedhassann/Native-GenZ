@@ -9,4 +9,3 @@ if (empty($user = unserialize($_SESSION["user"]))) {
     }else {
     header("location:" . $_SERVER['HTTP_REFERER']."?msg=emptycomm");
 }
-?>
